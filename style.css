@@ -1,0 +1,126 @@
+.test:before {
+    content:"+";
+}
+
+/* .test:after {
+    content:"-";
+}
+
+div:hover {
+    color: red;
+}
+
+a:visited {
+    color: hotpink;
+}
+
+section :first-child {
+    color: green;
+}
+
+section :last-child {
+    color: red;
+}
+
+section :nth-child(odd) {
+    color: blueviolet;
+}
+
+section :nth-child(even) {
+    color: yellow;
+}
+
+div:empty {
+    width: 300px;
+    height: 300px;
+    background: green;
+}
+
+section span:first-of-type {
+    color: violet;
+} */
+
+
+div:not(.dark) {
+    color: violet;
+}
+
+span:only-child {
+    color: tomato;
+}
+
+.test{ 
+height: 200px;
+background-color: yellow;
+/* animation-name: layout; */
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-delay: 3s;
+transform: rotate(90deg);
+}
+.test:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes layout {
+    from {
+        width: 300px;
+    }
+    to {
+        width: 900px;
+    }
+}
+
+.test2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-name:layout2;
+    animation-duration: 5s;
+}
+@keyframes layout2{
+    from {
+        transform: rotate(0deg);
+    background-color: tomato;
+
+    }
+    to {
+        transform: rotate(360deg);
+    background-color: gray;
+
+    }
+}
+
+.line {
+    width: 1030px;
+    height: 3px;
+    background-color: black;
+    
+}
+
+
+.parent {
+    height: 300px;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+}
+
+.child:first-child {
+    flex-shrink: 0;
+    
+}
+
